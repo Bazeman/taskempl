@@ -20,10 +20,10 @@ public class Main {
         Workers[6] = new Fixed("Pool", 25000, 7);
         Workers[7] = new Fixed("Xena", 7500, 8);
 
-   // public static void SalarySort(Employ []arr) {  for (int i = 0; i < arr.length; i++) }
+    public static void SalarySort(Employ []arr) {  for (int i = 0; i < arr.length; i++) }
 
 
-   // public Employ[] NameSort(Employ a[]) {   }
+    public Employ[] NameSort(Employ [] arr) {   }
 
 System.out.println(Arrays.toString(Workers));
 
