@@ -10,7 +10,6 @@ public class Main {
 
         Employ[] Workers = new Employ[8];
 
-
         Workers[0] = new Hour("Oleg", 50, 1);
         Workers[1] = new Fixed("Lena", 50000, 2);
         Workers[2] = new Hour("Gena", 40, 3);
@@ -20,18 +19,51 @@ public class Main {
         Workers[6] = new Fixed("Pool", 25000, 7);
         Workers[7] = new Fixed("Xena", 7500, 8);
 
-    public static void SalarySort(Employ []arr) {  for (int i = 0; i < arr.length; i++) }
+
+        bubbleSort(Workers);
+
+        for(int i=0;i<Workers.length;i++){
+
+            System.out.print(Workers[i]);
+            System.out.println(" --Salary -- "+ Workers[i].Set_salary(Workers[i].getRate()));
+        }
 
 
-    public Employ[] NameSort(Employ [] arr) {   }
+    }
 
-System.out.println(Arrays.toString(Workers));
 
+
+    public static void bubbleSort(Employ arr[]){
+        for( int i=arr.length-1;i>0;i--){
+
+            for(int j = 0 ; j < i ; j++){
+
+
+                if( arr[j].Set_salary(arr[j].getRate()) > arr[j].Set_salary(arr[j].getRate()) ){
+
+                    Employ tempEmploy= new Fixed("temp",1,1);
+                    tempEmploy = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = tempEmploy;
+                }
+            }
 
 
 
 
         }
+
+
+
+
+    }
+
+
+
+
+
+
+
 
 }
 

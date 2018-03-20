@@ -1,7 +1,16 @@
+import lombok.Data;
+import lombok.Getter;
+
 /**
  * Created by OLEG on 08.03.2018.
  */
+
+
+@Getter
+@Data
 public class Fixed extends  Employ
+
+
 
 
 {
